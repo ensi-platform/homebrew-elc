@@ -1,4 +1,4 @@
-class Elc < Formula
+class ElcAT100 < Formula
   desc "Tool for deploying microservices on developer machine"
   homepage "https://github.com/ensi-platform/elc"
   url "https://github.com/ensi-platform/elc/archive/refs/tags/v1.0.0.tar.gz"
@@ -6,6 +6,10 @@ class Elc < Formula
   license "MIT"
 
   depends_on "go" => :build
+  on_macos do
+    depends_on "bash" => :build
+    depends_on "coreutils" => :build
+  end
 
   def install
     ENV["CGO_ENABLED"] = "0"

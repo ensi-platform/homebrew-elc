@@ -1,4 +1,4 @@
-class Elc < Formula
+class ElcAT0211 < Formula
   desc "Tool for deploying microservices on developer machine"
   homepage "https://github.com/ensi-platform/elc"
   url "https://github.com/ensi-platform/elc/archive/refs/tags/v0.2.11.tar.gz"
@@ -15,7 +15,7 @@ class Elc < Formula
     ENV["CGO_ENABLED"] = "0"
     ldflags = "-X github.com/ensi-platform/elc/core.Version=v0.2.11"
     system "go", "get"
-    system "go", "build", *std_go_args(ldflags:)
+    system "go", "build", *std_go_args(ldflags: ldflags)
   end
 
   test do
