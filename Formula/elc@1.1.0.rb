@@ -1,4 +1,4 @@
-class Elc < Formula
+class ElcAT110 < Formula
   desc "Tool for deploying microservices on developer machine"
   homepage "https://github.com/ensi-platform/elc"
   url "https://github.com/ensi-platform/elc/archive/refs/tags/v1.1.0.tar.gz"
