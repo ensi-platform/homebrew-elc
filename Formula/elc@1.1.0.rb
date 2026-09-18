@@ -13,7 +13,7 @@ class ElcAT110 < Formula
 
   def install
     ENV["CGO_ENABLED"] = "0"
-    ldflags = "-X github.com/ensi-platform/elc/core.Version=v1.0.0"
+    ldflags = "-X github.com/ensi-platform/elc/core.Version=v1.1.0"
     system "go", "get"
     system "go", "build", *std_go_args(ldflags: ldflags)
   end
